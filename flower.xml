@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<orangerie>
+           <flower id="p1">
+                   <name>Dracena</name>
+                   <soil>Podsol</soil>
+                   <origin>USA</origin>
+                   <visual_parameters>
+                                      <stem_colour>green</stem_colour>
+                                      <leaves_colour>green</leaves_colour>
+                                      <average_size unit="centimetr">200.0</average_size>
+                   </visual_parameters>
+                   <growing_tips>
+                                 <temperature grade="farenheit">100</temperature>
+                                 <light>0</light>
+                                 <watering unit="ounce">200</watering>
+                   </growing_tips>
+                   <multiplying>Cutting</multiplying>
+           </flower>
+           <flower id="p2">
+                   <name>Abelia</name>
+                   <soil>Podsol</soil>
+                   <origin>USA</origin>
+                   <visual_parameters>
+                                      <stem_colour>green</stem_colour>
+                                      <leaves_colour>green</leaves_colour>
+                                      <average_size unit="inch">200.0</average_size>
+                   </visual_parameters>
+                   <growing_tips>
+                                 <temperature grade="celsius">200</temperature>
+                                 <light>3</light>
+                                 <watering unit="mililiter">200</watering>
+                   </growing_tips>
+                   <multiplying>Cutting</multiplying>
+           </flower>
+           <flower id="p3">
+                   <name>Abelia</name>
+                   <soil>Torf podsol</soil>
+                   <origin>Brazil</origin>
+                   <visual_parameters>
+                                      <stem_colour> dark green</stem_colour>
+                                      <leaves_colour>light green</leaves_colour>
+                                      <average_size unit="centimetr">200.0</average_size>
+                   </visual_parameters>
+                   <growing_tips>
+                                 <temperature grade="farenheit">200</temperature>
+                                 <light>4</light>
+                                 <watering unit="ounce">200</watering>
+                   </growing_tips>
+                   <multiplying>Cutting</multiplying>
+           </flower>
+           <flower id="p4">
+                   <name>Agave</name>
+                   <soil>Ground</soil>
+                   <origin>Ukraine</origin>
+                   <visual_parameters>
+                                      <stem_colour>green</stem_colour>
+                                      <leaves_colour>green</leaves_colour>
+                                      <average_size unit="inch">15.6</average_size>
+                   </visual_parameters>
+                   <growing_tips>
+                                 <temperature grade="farenheit">23</temperature>
+                                 <light>3</light>
+                                 <watering unit="mililiter">200</watering>
+                   </growing_tips>
+                   <multiplying>Seeds</multiplying>
+           </flower>
+</orangerie>
+
+
+
+

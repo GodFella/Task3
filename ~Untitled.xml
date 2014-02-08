@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<orangerie xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///C:/Users/Gleb/Documents/NetBeansProjects/lab2/ss.xsd">
+           <flower>
+                   <name>Dracena</name>
+                   <soil>podsol</soil>
+                   <origin>USA</origin>
+                   <visual_parameters>
+                                      <stem_colour>green</stem_colour>
+                                      <leaves_colour>green</leaves_colour>
+                                      <average_size unit="inch">15</average_size>
+                   </visual_parameters>
+                   <growing_tips>
+                                 <temperature grade="Celsius">23</temperature>
+                                 <light>shade</light>
+                                 <watering>200</watering>
+                   </growing_tips>
+                   <myltiplying>cutting</myltiplying>
+           </flower>
+           <flower>
+                   <name>Dracena2</name>
+                   <soil>podsol</soil>
+                   <origin>USA</origin>
+                   <visual_parameters>
+                                      <stem_colour>green</stem_colour>
+                                      <leaves_colour>green</leaves_colour>
+                                      <average_size unit="inch">15</average_size>
+                   </visual_parameters>
+                   <growing_tips>
+                                 <temperature grade="Celsius">23</temperature>
+                                 <light>0</light>
+                                 <watering>200</watering>
+                   </growing_tips>
+                   <myltiplying>cutting</myltiplying>
+           </flower>
+</orangerie>
+
+
+
+

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:wmh="http://www.wmhelp.com/2003/eGenerator" elementFormDefault="qualified">
+  <xs:element name="orangerie">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="flower" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="flower">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="name"/>
+        <xs:element ref="soil"/>
+        <xs:element ref="origin"/>
+        <xs:element ref="visual_parameters"/>
+        <xs:element ref="growing_tips"/>
+        <xs:element ref="multiplying"/>
+      </xs:sequence>
+      <xs:attribute name="id" type="xs:ID"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="name" type="xs:string"/>
+  <xs:element name="soil">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="Podsol"/>
+        <xs:enumeration value="Ground"/>
+        <xs:enumeration value="Torf podsol"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="origin" type="xs:string"/>
+  <xs:element name="visual_parameters">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="stem_colour"/>
+        <xs:element ref="leaves_colour"/>
+        <xs:element ref="average_size"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="stem_colour" type="xs:string"/>
+  <xs:element name="leaves_colour" type="xs:string"/>
+  <xs:element name="average_size">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:double">
+          <xs:attribute name="unit" type="xs:string" use="required"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="growing_tips">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="temperature"/>
+        <xs:element ref="light"/>
+        <xs:element ref="watering"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:simpleType name="TType">
+    <xs:restriction base="xs:integer">
+      <xs:maxInclusive value="1000"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="temperature">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="TType">
+          <xs:attribute name="grade" type="xs:string" use="required"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="light">
+  <xs:simpleType>
+    <xs:restriction base="xs:integer">
+      <xs:pattern value="[0-5]"/>
+    </xs:restriction>
+  </xs:simpleType>
+  </xs:element>
+  <xs:element name="watering">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:integer">
+          <xs:attribute name="unit" type="xs:string" use="required"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="multiplying">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="Leaves"/>
+        <xs:enumeration value="Cutting"/>
+        <xs:enumeration value="Seeds"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+</xs:schema>
